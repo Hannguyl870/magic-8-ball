@@ -31,6 +31,7 @@
             this.Titlelable = new System.Windows.Forms.Label();
             this.shakebutton = new System.Windows.Forms.Button();
             this.answeroutput = new System.Windows.Forms.Label();
+            this.questionoutput = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // Titlelable
@@ -46,7 +47,10 @@
             // shakebutton
             // 
             this.shakebutton.BackColor = System.Drawing.Color.Teal;
-            this.shakebutton.Image = global::magic_8_ball.Properties.Resources.clickBall;
+            this.shakebutton.BackgroundImage = global::magic_8_ball.Properties.Resources.clickBall;
+            this.shakebutton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.shakebutton.FlatAppearance.BorderSize = 0;
+            this.shakebutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.shakebutton.Location = new System.Drawing.Point(191, 95);
             this.shakebutton.Name = "shakebutton";
             this.shakebutton.Size = new System.Drawing.Size(505, 530);
@@ -61,17 +65,24 @@
             this.answeroutput.Size = new System.Drawing.Size(317, 50);
             this.answeroutput.TabIndex = 2;
             // 
+            // questionoutput
+            // 
+            this.questionoutput.Location = new System.Drawing.Point(191, 665);
+            this.questionoutput.Name = "questionoutput";
+            this.questionoutput.Size = new System.Drawing.Size(505, 44);
+            this.questionoutput.TabIndex = 3;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Teal;
             this.ClientSize = new System.Drawing.Size(926, 755);
+            this.Controls.Add(this.questionoutput);
             this.Controls.Add(this.answeroutput);
             this.Controls.Add(this.shakebutton);
             this.Controls.Add(this.Titlelable);
             this.Name = "Form1";
-            this.Text = "Form1";
             this.ResumeLayout(false);
 
         }
@@ -81,6 +92,7 @@
         private System.Windows.Forms.Label Titlelable;
         private System.Windows.Forms.Button shakebutton;
         private System.Windows.Forms.Label answeroutput;
+        private System.Windows.Forms.Label questionoutput;
     }
 }
 
